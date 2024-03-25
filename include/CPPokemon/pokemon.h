@@ -3,7 +3,7 @@
 #include "CPPokemon/util/pkm.h"
 
 namespace CPPokemon {
-class Rowlett : public Pokemon {};
-class Bidoof: public Pokemon {};
-class 
+class Rowlet: public Pokemon {};
+class Bidoof: public Pokemon {}; 
+class Charmander: public Pokemon {};
 } // namespace CPPokemon
