@@ -2,6 +2,7 @@
 
 #include "CPPokemon/util/mov.h"
 #include <memory>
+#include <random>
 
 namespace CPPokemon {
 
@@ -12,7 +13,7 @@ public:
   inline int power() const override { return _power; };
   inline int accuracy() const override { return _accuracy; };
   inline const Type &type() const override { return *_type; };
-  int damage(const Type &, const Type &) override;
+  int damage(const Type &, const Type &, int chance) override;
 
 protected:
   AbstractMovement(int power, int accuracy);
@@ -34,7 +35,7 @@ public:
 class Rollout : public AbstractMovement {
 public:
   Rollout();
-  int damage(const Type &, const Type &) override;
+  int damage(const Type &, const Type &, int chance) override;
 
 private:
   int cnt;
