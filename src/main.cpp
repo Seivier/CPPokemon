@@ -1,8 +1,8 @@
+#include "CPPokemon/pokemon.h"
 #include <iostream>
 #include <ostream>
-#include "CPPokemon/pokemon.h"
 
-int main (int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
   CPPokemon::Bidoof sergio;
   CPPokemon::Mankey alberto;
 
