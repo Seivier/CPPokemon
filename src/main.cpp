@@ -1,6 +1,10 @@
 #include <iostream>
+#include "CPPokemon/pokemon.h"
 
 int main (int argc, char *argv[]) {
-  std::cout << "Hello world!" << std::endl;
+  CPPokemon::Bidoof sergio;
+  CPPokemon::Mankey alberto;
+  sergio.speak();
+  alberto.speak();
   return 0;
 }
